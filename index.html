@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Project | 5 </title>
+    <!-- Link Icon Images @@-->
+    <link rel="shortcut icon" href="images/myimagr.jpg" type="image/x-icon">
+
+    <!-- Links Css File's Here -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Media Css Screen With Responsive Website To make -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- SwiperJs.com Link For Create Slider and Other ... -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!--- Boostrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+
+
+    <!-- Boxicon link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!--- Link Javascript Files Here !!! -->
+
+
+</head>
+
+
+<!-- Styling Perticule Website for top section and fiest with slider this styling Code !!@@ -->
+<style>
+    swiper-container {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    swiper-slide {
+        background: url('images/3.jpg') no-repeat;
+        background-size: cover;
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-end;
+        padding: 10px 50px;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #slide3 {
+        background: url('images/2.jpg');
+        background-size: cover;
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-start;
+        padding: 10px 50px;
+    }
+
+    #slide3_content,
+    #slide2_content {
+        position: relative;
+        right: 0%;
+    }
+
+    #slide2 {
+        background: url('images/shop_back.jpg');
+        background-size: cover;
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-start;
+        padding: 10px 50px;
+    }
+
+    .pagination {
+        width: 200px;
+        border-radius: 10px;
+    }
+</style>
+</style>
+
+<body>
+
+
+    <!--- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h3 id="logo_name"><span>D</span>evweb</h3>
+            </div>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#shop">Our Shop</a></li>
+                <li><a href="#srccodes">Source Codes</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br><br>
+
+
+    <!-- Section Start FOr Component For  Website -->
+    <section class="slider_section top first" id="home">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false"
+            space-between="30" centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div class="slide_content">
+                    <h1>Free Course's !</h1>
+                    <div class="slide_descri">
+                        <p id="slide_sdescri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, asperiores
+                            consectetur! Sunt perspiciatis, quam illum blanditiis, ad commodi recusandae laborum earum,
+                            eum
+                            ipsum perferendis repellendus.</p>
+                    </div>
+                    <a href="#courses">Explore Now</a>
+                </div>
+            </swiper-slide>
+            <swiper-slide id="slide2">
+                <div class="slide_content" id="slide2_content">
+                    <h1>50% off Shop .!</h1>
+                    <div class="slide_descri">
+                        <p id="slide_sdescri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, asperiores
+                            consectetur! Sunt perspiciatis, quam illum blanditiis, ad commodi recusandae laborum earum,
+                            eum
+                            ipsum perferendis repellendus.</p>
+                    </div>
+                    <a href="#shop">Visit Shop</a>
+                </div>
+            </swiper-slide>
+            <swiper-slide id="slide3">
+                <div class="slide_content" id="slide3_content">
+                    <h1 id="slide_3_tit">Only $49 Source Codes</h1>
+                    <div class="slide_descri">
+                        <p id="slide_sdescri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, asperiores
+                            consectetur! Sunt perspiciatis, quam illum blanditiis, ad commodi recusandae laborum earum,
+                            eum
+                            ipsum perferendis repellendus.</p>
+                    </div>
+                    <a href="#srccodes">Buy Now !</a>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services" id="service">
+        <div class="section_nav">
+            <div class="section_title">
+                <h3>Services</h3>
+            </div>
+            <div class="view_btn">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <!-- Services Content -->
+        <div class="services_content">
+            <div class="services_row">
+                <div class="services_col">
+                    <div class="serv_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi iste consequatur error minima
+                            qui numquam ullam quia fugiat possimus tenetur totam, nulla architecto temporibus quas illo
+                            provident. Ipsam tempore ex aut possimus beatae alias accusantium quidem nam officiis,
+                            recusandae qui!</p>
+                        <h3>Web Developer..</h3>
+                        <p id="com_nameInc">Devweb Inc.</p>
+                    </div>
+                    <div class="serv_image">
+                        <img src="images/serv_img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="section_nav">
+            <div class="section_title">
+                <h3>Our Courses</h3>
+            </div>
+            <div class="view_btn">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <div class="cr_content">
+            <br><br>
+            <div class="cr_nav">
+                <ul>
+                    <li id="pyli">Python</li>
+                    <li id="Webdevli">Web Development</li>
+                    <li id="jsli">Javascript</li>
+                    <li id="designingli">Designing</li>
+                </ul>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="cr_templates">
+                <div class="cr_grid" id="python">
+                    <div class="cr_card">
+                        <img src="images/python.webp" alt="">
+                        <div class="cr_card_descri">
+                            <h3>Python Programming</h3>
+                            <p id="cr_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos
+                                itaque, fugit doloribus, beatae nostrum, corporis aperiam dolores sequi aliquam quod
+                                iure
+                                animi? Culpa, odit.</p>
+                            <button id="btn_explore">Explore Now <span>-></span></button>
+                        </div>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/python.webp" alt="">
+                        <h3>Python Programming</h3>
+                        <p id="cr_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos
+                            itaque, fugit doloribus, beatae nostrum, corporis aperiam dolores sequi aliquam quod iure
+                            animi? Culpa, odit.</p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/python.webp" alt="">
+                        <h3>Python Programming</h3>
+                        <p id="cr_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos
+                            itaque, fugit doloribus, beatae nostrum, corporis aperiam dolores sequi aliquam quod iure
+                            animi? Culpa, odit.</p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/python.webp" alt="">
+                        <h3>Python Programming</h3>
+                        <p id="cr_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos
+                            itaque, fugit doloribus, beatae nostrum, corporis aperiam dolores sequi aliquam quod iure
+                            animi? Culpa, odit.</p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+
+                </div>
+                <div class="cr_grid" id="webdev">
+                    <div class="cr_card">
+                        <img src="images/responsive.jpg" alt="">
+                        <div class="cr_card_descri">
+                            <h3>Web Development !</h3>
+                            <p id="cr_descri">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ea architecto?
+                                Quibusdam
+                                est dolore cum neque iste asperiores nam, harum assumenda sit, fugiat unde sunt.
+                            </p>
+                            <button id="btn_explore">Explore Now <span>-></span></button>
+                        </div>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/responsive.jpg" alt="">
+                        <h3>Web Development !</h3>
+                        <p id="cr_descri">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ea architecto? Quibusdam
+                            est dolore cum neque iste asperiores nam, harum assumenda sit, fugiat unde sunt.
+                        </p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/responsive.jpg" alt="">
+                        <h3>Web Development !</h3>
+                        <p id="cr_descri">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ea architecto? Quibusdam
+                            est dolore cum neque iste asperiores nam, harum assumenda sit, fugiat unde sunt.
+                        </p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/responsive.jpg" alt="">
+                        <h3>Web Development !</h3>
+                        <p id="cr_descri">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ea architecto? Quibusdam
+                            est dolore cum neque iste asperiores nam, harum assumenda sit, fugiat unde sunt.
+                        </p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+                </div>
+                <div class="cr_grid" id="js">
+                    <div class="cr_card">
+                        <img src="images/web.webp" alt="">
+                        <div class="cr_card_descri">
+                            <h3>Javascript !</h3>
+                            <p id="cr_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsa eaque
+                                voluptatem impedit ipsam quae asperiores aut neque dolorum, quaerat maxime molestiae,
+                                nihil
+                                quod consectetur.</p>
+                            <button id="btn_explore">Explore Now <span>-></span></button>
+                        </div>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/web.webp" alt="">
+                        <h3>Javascript !</h3>
+                        <p id="cr_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsa eaque
+                            voluptatem impedit ipsam quae asperiores aut neque dolorum, quaerat maxime molestiae, nihil
+                            quod consectetur.</p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/web.webp" alt="">
+                        <h3>Javascript !</h3>
+                        <p id="cr_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsa eaque
+                            voluptatem impedit ipsam quae asperiores aut neque dolorum, quaerat maxime molestiae, nihil
+                            quod consectetur.</p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+                    <div class="cr_card">
+                        <img src="images/web.webp" alt="">
+                        <h3>Javascript !</h3>
+                        <p id="cr_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsa eaque
+                            voluptatem impedit ipsam quae asperiores aut neque dolorum, quaerat maxime molestiae, nihil
+                            quod consectetur.</p>
+                        <button id="btn_explore">Explore Now <span>-></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Shopping Section -->
+    <section class="shop" id="shop">
+        <div class="section_nav">
+            <div class="section_title">
+                <h3>Visit Shop</h3>
+            </div>
+            <div class="view_btn">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <div class="shop_content">
+            <div class="shop_grid">
+                <div class="shop_card">
+                    <div class="product_image">
+                        <img src="images/f1.jpg" alt="">
+                    </div>
+                    <div class="shop_nav">
+                        <div class="product_descri">
+                            <p id="product_title">Shirt</p>
+                        </div>
+                        <div class="card_btn"><i class='bx bxs-cart-alt'></i></div>
+                    </div>
+                    <div class="product_price">
+                        <p id="price">$ 499</p>
+                    </div>
+                </div>
+                <div class="shop_card">
+                    <div class="product_image">
+                        <img src="images/f2.jpg" alt="">
+                    </div>
+                    <div class="shop_nav">
+                        <div class="product_descri">
+                            <p id="product_title">Shirt</p>
+                        </div>
+                        <div class="card_btn"><i class='bx bxs-cart-alt'></i></div>
+                    </div>
+                    <div class="product_price">
+                        <p id="price">$ 499</p>
+                    </div>
+                </div>
+                <div class="shop_card">
+                    <div class="product_image">
+                        <img src="images/f3.jpg" alt="">
+                    </div>
+                    <div class="shop_nav">
+                        <div class="product_descri">
+                            <p id="product_title">Shirt</p>
+                        </div>
+                        <div class="card_btn"><i class='bx bxs-cart-alt'></i></div>
+                    </div>
+                    <div class="product_price">
+                        <p id="price">$ 499</p>
+                    </div>
+                </div>
+                <div class="shop_card">
+                    <div class="product_image">
+                        <img src="images/f4.jpg" alt="">
+                    </div>
+                    <div class="shop_nav">
+                        <div class="product_descri">
+                            <p id="product_title">Shirt</p>
+                        </div>
+                        <div class="card_btn"><i class='bx bxs-cart-alt'></i></div>
+                    </div>
+                    <div class="product_price">
+                        <p id="price">$ 499</p>
+                    </div>
+                </div>
+                <div class="shop_card" id="extrashop">
+                    <div class="product_image">
+                        <img src="images/f4.jpg" alt="">
+                    </div>
+                    <div class="shop_nav">
+                        <div class="product_descri">
+                            <p id="product_title">Shirt</p>
+                        </div>
+                        <div class="card_btn"><i class='bx bxs-cart-alt'></i></div>
+                    </div>
+                    <div class="product_price">
+                        <p id="price">$ 499</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Source Codes Section -->
+    <section class="srccodes wrap" id="srccodes">
+        <div class="section_nav">
+            <div class="section_title">
+                <h3>Visit Source Codes</h3>
+            </div>
+            <div class="view_btn">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <!-- Source Codes Content !-->
+        <div class="src_content">
+            <div class="src">
+                <div class="src_card">
+                    <div class="src_left">
+                        <img src="https://devrahul.in/wp-content/uploads/2023/08/Screenshot-2023-08-14-at-5.32.05-PM-300x180.png)"
+                            alt="">
+                    </div>
+                    <div class="src_right">
+                        <p id="src_description">A mini Music Player !</p>
+                        <p id="src_date">August 14 , 2023</p>
+                    </div>
+                </div>
+                <div class="src_card">
+                    <div class="src_left"
+                        style="border: 5px solid tranparent; border-image: url('images/python.webp') 4; border-image-repeat:round;">
+                        <img src="images/python.webp" alt="">
+                    </div>
+                    <div class="src_right">
+                        <p id="src_description">Python Projects</p>
+                        <p id="src_date">Aprill 1 , 2023</p>
+                    </div>
+                </div>
+                <div class="src_card">
+                    <div class="src_left"
+                        style="border: 5px solid tranparent; border-image: url('images/responsive.jpg') 4; border-image-repeat:round;">
+                        <img src="images/responsive.jpg" alt="">
+                    </div>
+                    <div class="src_right">
+                        <p id="src_description">Responsive Website Use Html , css and JS</p>
+                        <p id="src_date">May 5, 2023</p>
+                    </div>
+                </div>
+                <div class="src_card">
+                    <div class="src_left"
+                        style="border: 5px solid tranparent; border-image: url('images/clones.png') 4; border-image-repeat:round;">
+                        <img src="images/clones.png" alt="">
+                    </div>
+                    <div class="src_right">
+                        <p id="src_description">Web Clone's Use Html , Css and JS</p>
+                        <p id="src_date">Jan 15, 2023</p>
+                    </div>
+                </div>
+                <div class="src_card">
+                    <div class="src_left"
+                        style="border: 5px solid tranparent; border-image: url('images/dashboards.webp') 10; border-image-repeat:round;">
+                        <img src="images/dashboards.webp" alt="">
+                    </div>
+                    <div class="src_right">
+                        <p id="src_description"> DashBoards ! </p>
+                        <p id="src_date">Dec 16 , 2022</p>
+                    </div>
+                </div>
+                <div class="src_card">
+                    <div class="src_left"
+                        style="border: 5px solid transparent;  border-image: url('images/web.webp') 4;   border-image-repeat: round;">
+                        <img src="images/web.webp" alt="">
+                    </div>
+                    <div class="src_right">
+                        <p id="src_description">Web Project's</p>
+                        <p id="src_date">Nov 25 , 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Out Team Section -->
+    <section class="ourTeam" id="team">
+        <div class="section_nav">
+            <div class="section_title">
+                <h3>Our Team</h3>
+            </div>
+            <div class="view_btn">
+                <a href="#" style="display :none;">View All</a>
+            </div>
+        </div>
+        <div class="team_content">
+            <div class="owl_team">
+                <div class="team_card">
+                    <!-- <img src="images/user_serv.jpg" alt=""> -->
+                    <div class="user_img"> <img src="images/user_serv.jpg" alt=""></div>
+                    <div class="user_details">
+                        <h3 id="first_member!">Mitali Rana</h3>
+                        <p id="work_cratiearia">Web Developer</p>
+                        <p id="user_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quis
+                            doloremque
+                            amet
+                            repellat ab harum sit nemo quas dolores! Natus!</p>
+                    </div>
+                </div>
+                <div class="team_card">
+                    <!-- <img src="images/serv_img.jpg" alt=""> -->
+                    <div class="user_img"> <img src="images/serv_img.jpg" alt=""></div>
+                    <div class="user_details">
+                        <h3 id="first_member!">Devid Roy</h3>
+                        <p id="work_cratiearia">Project Manager</p>
+                        <p id="user_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quis
+                            doloremque
+                            amet
+                            repellat ab harum sit nemo quas dolores! Natus!</p>
+                    </div>
+                </div>
+                <div class="team_card">
+                    <!-- <img src="images/user_2" alt=""> -->
+                    <div class="user_img"> <img src="images/user_4.jpg" alt=""></div>
+                    <div class="user_details">
+                        <h3 id="first_member!">Kaira Kapoor</h3>
+                        <p id="work_cratiearia">Software Engi & Dev</p>
+                        <p id="user_descri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quis
+                            doloremque
+                            amet
+                            repellat ab harum sit nemo quas dolores! Natus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="founder" id="about">
+        <div class="section_nav">
+            <div class="section_title">
+                <h3>Co - Founder</h3>
+            </div>
+            <div class="view_btn">
+                <a href="#" style="display :none;">View All</a>
+            </div>
+        </div>
+        <div class="founder_content">
+            <div class="founder_img">
+                <img src="images/myimagr.jpg" alt="">
+            </div>
+            <div class="founder_skills">
+                <div class="skills1">
+                    <h3><span>D</span>evweb</h3>
+                    <p>Co-founder, Devweb</p>
+                </div>
+                <div class="skills2">
+                    <h3>Software Engnineer</h3>
+                    <p>At Companyname</p>
+                </div>
+                <div class="skills3">
+                    <h3>Motivational Speaker</h3>
+                    <p>Motivate For Everyone and Enywhere !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section_nav">
+            <div class="section_title">
+                <h3>Contact US</h3>
+            </div>
+            <div class="view_btn">
+                <a href="#" style="display :none;">View All</a>
+            </div>
+        </div>
+
+        <div class="contact_content">
+            <div class="left">
+                <h2 style="text-align: center;">Submit Your Query !..</h2>
+                <br>
+                <div class="left_content">
+                    <input type="text" placeholder="Enter Your First Name.. "><br><br>
+                    <input type="text" placeholder="Enter Your Last Name.."><br><br>
+                    <input type="email" placeholder="Enter Your E-mail.."><br><br>
+                    <button id="submit_email">Send Messages</button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/contact.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <h1><span>D</span>evweb</h1>
+        <p>Created By Ritesh Thakare</p>
+    </footer>
+
+    <!-- Javascript file's -->
+    <script src="js/main.js"></script>
+
+    <!-- Swiper Js Link Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!--- Ptractical Test Javascript -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: [
+                "<i class='fa fa-caret-left'></i>",
+                "<i class='fa fa-caret-right'></i>"
+            ],
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
